@@ -18,6 +18,7 @@ def send_log(data):
             print(f"[!] Server Error: Received status {response.status_code}")
             return False
             
+        print(f"[✓] Sent: {data}")    
         return True
 
     except requests.exceptions.Timeout:
